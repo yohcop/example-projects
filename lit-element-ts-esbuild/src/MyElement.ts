@@ -1,4 +1,5 @@
 import { html, css, LitElement, property } from 'lit-element';
+import {remark} from 'remark'
 
 export class MyElement extends LitElement {
   static styles = css`
@@ -15,6 +16,7 @@ export class MyElement extends LitElement {
 
   __increment() {
     this.counter += 1;
+    console.log(remark().parse("# title"));
   }
 
   render() {
