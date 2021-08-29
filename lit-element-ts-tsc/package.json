@@ -16,8 +16,10 @@
     "test:watch": "web-test-runner dist/test/**/*.test.js --node-resolve --watch"
   },
   "dependencies": {
+    "@rollup/plugin-commonjs": "^20.0.0",
     "lit-element": "2.5.1",
-    "lit-html": "1.4.1"
+    "lit-html": "1.4.1",
+    "remark": "^14.0.1"
   },
   "devDependencies": {
     "@open-wc/testing": "2.5.33",
